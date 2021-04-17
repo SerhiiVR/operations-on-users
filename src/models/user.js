@@ -1,17 +1,17 @@
 const mongoose = require('mongoose');
 
 module.exports = new mongoose.Schema({
-  user_id: {
+  userId: {
     type: String,
-    default: 'did not specify'
+    required: true,
   },
   password: {
     type: String,
-    default: 'did not specify'
+    required: true,
   },
-  id_type: {
+  idType: {
     type: String,
-    default: 'did not specify'
+    required: true,
   },
   date: {
     type: Date,
